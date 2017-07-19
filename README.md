@@ -9,7 +9,7 @@ The test suite uses Rspec 3.54.
 MVP:
 
 As a non-logged in user, I can:
-1.register and get my new Sparkiott member number.
+1. register and get my new Sparkiott member number.
 2. log in
 
 As a logged-in user, I can:
