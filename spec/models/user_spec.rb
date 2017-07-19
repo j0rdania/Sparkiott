@@ -6,6 +6,7 @@ RSpec.describe User, type: :model do
     let(:user_wo_email) {User.create(name: 'ee', password: 'kk')}
     let(:user_wo_pwd) {User.create(email: 'ee', name: 'kk')}
     let(:valid_user) {User.create(email: 'mary@smith.com', password: 'pw', name: 'Mary')}
+
     it 'is not valid without a name' do
       expect(user_wo_name).to_not be_valid
     end
