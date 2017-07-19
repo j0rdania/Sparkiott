@@ -9,18 +9,18 @@ The test suite uses Rspec 3.54.
 MVP:
 
 As a non-logged in user, I can:
-a. register and get my new Sparkiott member number.
-b. log in
+1.register and get my new Sparkiott member number.
+2. log in
 
 As a logged-in user, I can:
-a. log out
-b. see my profile
-c. see a list of hotels, by city
-d. change my favorite hotel in my profile
+1. log out
+2. see my profile
+3. see a list of hotels, by city
+4. change my favorite hotel in my profile
 
 As an administrator, I can:
-a. add a new hotel
-b. update a user's point balance
+1. add a new hotel
+2. update a user's point balance
 
 
 
