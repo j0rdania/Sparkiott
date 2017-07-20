@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   resources :sessions, only: [:create, :destroy]
   # users resources are for creating new users
   resources :users, only: [:new, :create]
-  root to: "users#new"
+  root to: "welcome#index"
 end
