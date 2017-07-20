@@ -4,12 +4,23 @@
     <title>Sparkiott</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
 
   <body>
-    Sparkiott! 
+
+    <nav>
+       <a href="/"> Home</a>
+        <% if !session[:id] %>
+          <%= link_to('Register', :new_user) %>
+          LOG IN FORM with potential errors HERE
+        <% else %>
+          Welcome, <%= @user.name %>
+          <%= button_to('Log Out', 'sessions#destroy' ) %>
+        <% end %>
+     </nav>
+    Sparkiott!  In application.html.erb!!!
     <%= yield %>
   </body>
 </html>
